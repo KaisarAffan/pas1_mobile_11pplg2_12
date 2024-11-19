@@ -37,7 +37,6 @@ class MyListCard extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
@@ -52,19 +51,18 @@ class MyListCard extends StatelessWidget {
                       foreground: Paint()
                         ..shader = LinearGradient(
                           colors: [
-                            Colors.teal.shade800,
-                            Colors.teal.shade400,
+                            Color.fromARGB(255, 77, 69, 69),
+                            Color(0xFF242A32),
                           ],
                         ).createShader(Rect.fromLTWH(0, 0, 200, 70)),
                     ),
                   ),
                   SizedBox(height: 6),
-
                   Text(
                     models.strLocation,
                     style: TextStyle(
                       fontSize: 14,
-                      color: Colors.teal[600],
+                      color: Color(0xFF242A32),
                     ),
                   ),
                   SizedBox(height: 12),
